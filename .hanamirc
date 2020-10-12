@@ -1,0 +1,3 @@
+project=code_anth
+test=rspec
+template=erb
