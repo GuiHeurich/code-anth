@@ -26,3 +26,5 @@ group :production do
   # gem 'puma'
 end
 ruby '2.6.4'
+
+gem "pry", "~> 0.13.1"
