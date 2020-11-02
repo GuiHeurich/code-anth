@@ -15,11 +15,13 @@ end
 
 group :test, :development do
   gem 'dotenv', '~> 2.4'
+  gem "pry", "~> 0.13.1"
 end
 
 group :test do
   gem 'rspec'
   gem 'capybara'
+  gem "database_cleaner-sequel", "~> 1.8"
 end
 
 group :production do
@@ -27,4 +29,4 @@ group :production do
 end
 ruby '2.6.4'
 
-gem "pry", "~> 0.13.1"
+gem "bcrypt", "~> 3.1"

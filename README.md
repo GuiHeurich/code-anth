@@ -14,3 +14,17 @@ A list of TODO's is provided below.
 - Implement a contact form for rubyists
 - Create user sign/up and login
 - Implement sign in with apple
+
+# Contributing
+
+## Preparing the databases
+
+Run
+```
+bundle exec hanami db prepare
+```
+
+And then run
+```
+HANAMI_ENV=test bundle exec hanami db prepare
+```
