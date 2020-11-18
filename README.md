@@ -11,13 +11,27 @@ A list of TODO's is provided below. Please clone and contribute.
 
 # TODO
 
+- Collaborative reading list, where people can upload content
 - Design a new favicon
 - Implement a contact form for rubyists
-- Create user sign/up and login
-- Implement sign in with apple
 
 # Learning and research group
 
 We currenlty run a reading group on things that intersect technical software material and cultural studies of programming.
 We meet every Thursday at 3pm GMT. The readings can be found on [Code Anth](https://code-anth.herokuapp.com).
 Please email g.heurich@ucl.ac.uk if you want to join. 
+
+# Contributing
+
+## Preparing the databases
+
+Run
+```
+bundle install
+bundle exec hanami db prepare
+```
+
+And then run
+```
+HANAMI_ENV=test bundle exec hanami db prepare
+```
