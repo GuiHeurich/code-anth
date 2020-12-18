@@ -28,3 +28,7 @@ end
 ruby '2.6.4'
 
 gem "pry", "~> 0.13.1"
+
+gem "database_cleaner-active_record", "~> 1.8"
+
+gem "activerecord", "~> 6.1"

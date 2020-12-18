@@ -1,0 +1,61 @@
+<h1><%= title%></h1>
+<br>
+<br>
+<div>
+<p>
+Coding is making software. Anthropology is researching people.<br>
+What could the intersection between them be?<br>
+That is what we are trying to find out with CodeAnth.<br>
+<br>
+You are welcome to be a part of it.<br>
+</p>
+</div>
+<br>
+<p>CodeAnth is currently based on two related activities: <br>
+  (i) fieldwork with ruby developers, and <br>
+  (ii) a reading group.
+</p>
+<br>
+<p>(i) if you are a ruby developer and want to be know more about this project <br>
+  please enter your email below and click the "#minaswan" button.
+  <form>
+    <input type="text">
+    <input type="submit" 
+</p>
+<br>
+<p>
+We currently hold an online LRG (learning and research group).<br>
+We read something and discuss it, hoping to gain something out of it.<br>
+We think that will help us figuring out what CodeAnth could be.<br>
+</p>
+<br>
+<br>
+<p>JOIN US by sending an email to g.heurich@ucl.ac.uk</p>
+<br>
+<br>
+<div>
+<h3>SCHEDULE and READINGS</h3>
+<p> November 5th </p>
+<p>"At the edge of language: the art of code"<br> 
+chapter 2 of Michael Black's PhD Dissertation.<br>
+Available through creative commons licensing<br>
+<a href="https://repository.upenn.edu/dissertations/AAI3072974/"> here </a></p>
+<p> November 12th </p>
+<p>"Treating code as an essay" by Yukihirio Matsumoto<br>
+<a href="https://learning.oreilly.com/library/view/beautiful-code/9780596510046/ch29.html"> here </a></p>
+<p> November 19th </p>
+<p>"Introduction" and "Obfuscated Code", from Matthew Fuller (ed.) Software Studies: a lexicon<br>
+<a href="https://direct.mit.edu/books/book/1924/Software-StudiesA-Lexicon">here</a></p>
+<p> November 26th </p>
+<p>"Reading culture through code", Mark Marino.<br>
+<a href="https://hcommons.org/deposits/objects/hc:19538/datastreams/CONTENT/content">here</a></p>
+<p> December 3rd </p>
+<p> December 10th </p>
+</div>
+<br>
+<br>
+<div>
+  <p>We also have a collaborative reading list for everything related to code-anth<br>
+  <p>Have a look and contribute with more readings and sections</p><br>
+  <a href="https://code-anth.herokuapp.com/colab">COLAB</a></p>
+</div>
