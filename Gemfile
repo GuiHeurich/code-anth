@@ -1,10 +1,13 @@
 source 'https://rubygems.org'
 
+ruby '2.6.4'
+
 gem 'rake'
 gem 'hanami',       '~> 1.3'
 gem 'hanami-model', '~> 1.3'
-
+gem 'nokogiri', '~> 1.11.1'
 gem 'pg'
+gem "pry", "~> 0.13.1"
 
 group :development do
   # Code reloading
@@ -14,6 +17,7 @@ group :development do
 end
 
 group :test, :development do
+  gem 'database_cleaner-active_record'
   gem 'dotenv', '~> 2.4'
 end
 
@@ -25,10 +29,3 @@ end
 group :production do
   # gem 'puma'
 end
-ruby '2.6.4'
-
-gem "pry", "~> 0.13.1"
-
-gem "database_cleaner-active_record", "~> 1.8"
-
-gem "activerecord", "~> 6.1"

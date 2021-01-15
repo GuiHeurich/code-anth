@@ -4,7 +4,8 @@ RSpec.describe ReadingRepository, type: :repository do
    {
      author: author,
      title: "The Ruby Programming Language",
-     link: "https://www.ruby-lang.org/en/documentation/"
+     url: "https://www.ruby-lang.org/en/documentation/",
+     meeting_date: Date.today
     }
  }
 
