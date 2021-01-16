@@ -22,11 +22,11 @@ module Web
         end
 
         def get_next_reading(readings)
-          readings.select { |reading| reading.meeting_date.to_date >= Date.today }.first
+          readings.select { |reading| reading.meeting_date >= Time.now }.first
         end
 
         def sort_past_reading(readings)
-          readings.select { |reading| reading.meeting_date.to_date < Date.today }
+          readings.select { |reading| reading.meeting_date < Time.now }
         end
       end
     end
