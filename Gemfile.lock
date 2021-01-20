@@ -214,6 +214,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activesupport
   capybara
   database_cleaner-active_record
   dotenv (~> 2.4)
