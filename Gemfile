@@ -5,6 +5,7 @@ ruby '2.6.4'
 gem 'rake'
 gem 'hanami',       '~> 1.3'
 gem 'hanami-model', '~> 1.3'
+gem 'irb'
 gem 'nokogiri', '~> 1.11.1'
 gem 'pg'
 gem "pry", "~> 0.13.1"
