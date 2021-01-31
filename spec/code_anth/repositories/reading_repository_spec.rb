@@ -1,3 +1,5 @@
+require 'spec_helper'
+
 RSpec.describe ReadingRepository, type: :repository do
  let(:author) { "Matsumoto, Yukihiro" }
  let(:entry) {
@@ -18,12 +20,14 @@ RSpec.describe ReadingRepository, type: :repository do
 
   context "#count" do
     it "counts the number of records" do
+      subject.create(entry)
       expect(subject.count).to eq 1
     end
   end
 
   context "#all" do
     it "returns all readings" do
+      subject.create(entry)
       expect(subject.all.first.author).to eq author
     end
   end
