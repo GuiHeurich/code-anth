@@ -34,11 +34,11 @@ RSpec.describe Web::Views::Readings::Index, type: :view do
   end
 
   context "when there is a future meeting" do
-    let(:exposures) { Hash[past_reading: [past_reading], next_reading: next_reading] }
+    let(:exposures) { Hash[past_reading: [past_reading], next_reading: [next_reading]] }
     let(:view)      { described_class.new(template, exposures) }
     let(:rendered)  { view.render }
 
-    it "only shows the next meeting's reading" do
+    it "only shows all future readings" do
       expect(rendered.scan(/class="next_reading"/).length).to eq(1)
       expect(rendered).to include(next_reading.title)
       expect(rendered).to include(next_reading.meeting_date.strftime('%d/%m/%y'))

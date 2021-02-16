@@ -1,10 +1,13 @@
 <div id="readings">
-  <div class="next_reading">
+  <div>
     <h3>Next_Reading</h3>
     <% if next_reading.blank? %>
       <p>Nothing scheduled. Wanna suggest something, maybe?</p>
     <% else %>
-      <p>"<%= next_reading.title %>" by <%= next_reading.author %>, on <%= next_reading.meeting_date.strftime('%d/%m/%y') %></p>
+      <% next_reading.each do |reading| %>
+        <div class="next_reading">
+          <p>"<%= reading.title %>" by <%= reading.author %>, on <%= reading.meeting_date.strftime('%d/%m/%y') %></p>
+      <% end %>
     <% end %>
   </div>
   <br>

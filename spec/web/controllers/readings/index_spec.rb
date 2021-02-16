@@ -17,7 +17,7 @@ RSpec.describe Web::Controllers::Readings::Index, type: :action do
 
   it 'exposes all readings' do
     action.call(params)
-    expect(action.exposures[:next_reading]).to eq(@future_reading)
+    expect(action.exposures[:next_reading]).to eq([@future_reading])
     expect(action.exposures[:past_reading]).to eq([@past_reading])
   end
 end
