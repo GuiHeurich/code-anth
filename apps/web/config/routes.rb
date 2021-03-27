@@ -6,3 +6,4 @@
 get '/', to: 'home#index'
 post '/interlocutors', to: 'interlocutors#create', as: :create_interlocutor
 get '/readings', to: 'readings#index', as: :readings
+get '/posts', to: 'posts#index', as: :posts
