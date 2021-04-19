@@ -5,5 +5,6 @@
 # get '/hello', to: ->(env) { [200, {}, ['Hello from Hanami!']] }
 root to: 'home#index'
 resources :readings, only: [:index]
-resources :posts, only: [:index, :create]
+resources :posts, only: [:index, :show]
 post '/interlocutors', to: 'interlocutors#create', as: 'create_interlocutor'
+get '/posts/:id', to: 'posts#show'

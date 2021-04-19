@@ -5,10 +5,13 @@
     <%= favicon %>
     <%= stylesheet 'application' %>
   </head>
-  <body class = "body">
-    <h1>Code_Anth</h1>
-    <h2>------------------</h2>
-    <br>
-    <%= yield %>
+  <body class="body">
+    <div class="wrapper">
+      <div class="col1">Left/Menu</div>
+      <div class="col2">
+      <%= yield %>
+      </div>
+      <div class="col3">Right/Silly</div>
+    </div>
   </body>
 </html>

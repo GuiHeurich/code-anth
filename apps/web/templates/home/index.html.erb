@@ -1,36 +1,45 @@
-<div>
-<p>
-Coding is making software. Anthropology is researching people.<br>
-What could the intersection between them be?<br>
-That is what we are trying to find out with CodeAnth.<br>
+<div class="paragraph">
+  <div>
+    <p>
+      Coding is making software.<br>
+      Anthropology is researching people.<br>
+      What could the intersection between them be?<br>
+      <br>
+      That is what we are trying to find out with CodeAnth.<br>
+      <br>
+      You are welcome to be a part of it.<br>
+    </p>
+  </div>
 <br>
-You are welcome to be a part of it.<br>
-</p>
-</div>
+  <div>
+    <p>CodeAnth is currently based on two main threads: <br>
+    (1) interviews with ruby developers, and <br>
+    (2) a reading group.
+    </p>
 <br>
-<p>CodeAnth is currently based on two main threads: <br>
-  (1) interviews with ruby developers, and <br>
-  (2) a reading group.
-</p>
-<br>
-<p>(1) if you are a ruby developer and want to know more about this project <br>
-  please enter your email below and we'll be in touch.
+  </div>
+  <div>
+    <p>(1) if you are a ruby developer and want to know more about this project, please enter your email below and we'll be in touch.
 <%=
   form_for :new_interlocutor, routes.path(:create_interlocutor), params: { email: :email } do
     email_field :email
 
     submit '#MINASWAN'
   end
-%>
-<br>
-</p>
-<br>
-<p>
-(2) if you also want to be a part of our learning and reading group, please join us by <br>
-sending an email to join@code-anth.xyz <br>
-Every week we read something about programming or anthropology <br>
-</p>
-<br>
-<div>
-<h3>Have a look at what we've read so far: <%= link_to 'readings', routes.path(:readings) %></h3>
+  %>
+    </p>
+  <br>
+  <br>
+  </div>
+    <p>
+    (2) if you also want to be a part of our learning and reading group, please join us by sending an email to join@code-anth.xyz
+    </p>
+  <br>
+  <br>
+  </div>
+  <div class="paragraph">
+    <p>
+    Have a look at what we've read so far: <%= link_to 'readings', routes.path(:readings) %>
+    </p>
+  </div>
 </div>

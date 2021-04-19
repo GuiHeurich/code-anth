@@ -10,7 +10,7 @@ RSpec.describe 'Show posts' do
       repository.create(title: "d", author: "e", content: "f")
     end
 
-    it 'shows the title and first paragraph of each post' do
+    it 'shows the title of each post' do
       visit '/posts'
 
       within '#posts' do
