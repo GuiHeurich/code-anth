@@ -30,10 +30,5 @@ RSpec.describe Web::Controllers::Posts::Show, type: :action do
       action.call(params)
       expect(action.exposures[:post].id).to eq(post.id)
     end
-
-    it "splits content into paragraphs according to separator" do
-      action.call(params)
-      expect(action.exposures[:content].count).to eq 5
-    end
   end
 end

@@ -1,14 +1,12 @@
 <% if post %>
-  <div id="title" class="post-title">
-    <h2><%= post.title %></h2>
+  <div id="title">
+    <h2>:: <%= post.title.downcase %></h2>
     <br>
   </div>
-  <div id="content">
+  <div id="content" class="post-content">
     <% content.each do |paragraph| %>
-    <div class="paragraph">
-    <p><%= paragraph %></p>
+      <%= paragraph %>
     <br>
-    </div>
     <% end %>
   </div>
 <% else %>

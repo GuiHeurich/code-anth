@@ -7,7 +7,7 @@
   color: white;
   font: 1.3rem Inconsolata, monospace;
   text-shadow: 0 0 5px #C8C8C8;
-  font-size: 90%;
+  font-size: 110%;
 }
 
 .wrapper {
@@ -19,14 +19,17 @@
   flex: 2 0 auto;
   padding-left: 20px;
   line-height: 1.5;
+  text-align: center;
 }
 
 .col2 {
-  flex: 5 1 auto;
+  flex: 5 1 50px;
 }
 
 .col3 {
-  flex: 1 0 auto;
+  flex: 2 0 auto;
+  padding-right: 20px;
+  text-align: center;
 }
 
 .link {
@@ -53,4 +56,9 @@
 .main-section {
   padding-left: 40px;
   padding-right: 40px;
+}
+
+.post-content {
+  font-size: 110%;
+  line-height: 1.5;
 }
