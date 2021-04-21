@@ -1,36 +1,38 @@
 <div>
-<p>
-Coding is making software. Anthropology is researching people.<br>
-What could the intersection between them be?<br>
-That is what we are trying to find out with CodeAnth.<br>
-<br>
-You are welcome to be a part of it.<br>
-</p>
-</div>
-<br>
-<p>CodeAnth is currently based on two main threads: <br>
-  (1) interviews with ruby developers, and <br>
-  (2) a reading group.
-</p>
-<br>
-<p>(1) if you are a ruby developer and want to know more about this project <br>
-  please enter your email below and we'll be in touch.
+  <h2>:: code::anth</h2>
+  <p>
+    Code::Anth is an attempt to combine coding(0) and anthropology(1)<br>
+    if 0 is making software, and 1 is researching people, what could the intersection between them be?
+    <br>
+    that's what we are trying to find out <br>
+    you are welcome to be a part of it
+  </p>
+  <br>
+  <h2>:: who?</h2>
+  <p>
+    <a href="https://www.ucl.ac.uk/anthropology/people/guilherme-orlandini-heurich" class="link">Gui Heurich</a> started and currently leads the project
+  </p>
+  <br>
+  <h2>:: ruby</h2>
+  <p>
+    Code::Anth currently focuses on the ruby community<br>
+    <a href="https://www.ruby-lang.org/en/" class="link">ruby</a> is a language created by Matz in Japan in 1993
+  </p>
+  <p>
+    if you are a ruby dev and want to know more about this project, please enter your email below and we'll be in touch
 <%=
   form_for :new_interlocutor, routes.path(:create_interlocutor), params: { email: :email } do
     email_field :email
 
     submit '#MINASWAN'
   end
-%>
-<br>
-</p>
-<br>
-<p>
-(2) if you also want to be a part of our learning and reading group, please join us by <br>
-sending an email to join@code-anth.xyz <br>
-Every week we read something about programming or anthropology <br>
-</p>
-<br>
-<div>
-<h3>Have a look at what we've read so far: <%= link_to 'readings', routes.path(:readings) %></h3>
+  %>
+  </p>
+    <br>
+  <h2>:: in the past </h2>
+  <p>
+    we've had a busy <a href="/readings" class="link">reading group</a> in 2020/2021<br>
+    the next reading group will be in 2022
+    you're welcome to join it, just <a class="link" href="mailto:join@code-anth.xyz">email us</a>
+  </p>
 </div>

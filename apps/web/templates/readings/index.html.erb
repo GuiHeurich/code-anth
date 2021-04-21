@@ -1,27 +1,25 @@
 <div id="readings">
-  <div>
-    <h3>Next_Reading</h3>
-    <% if next_reading.blank? %>
-      <p>Nothing scheduled. Wanna suggest something, maybe?</p>
-    <% else %>
-      <% next_reading.each do |reading| %>
-        <div class="next_reading">
-          <p>"<%= reading.title %>" by <%= reading.author %>, on <%= reading.meeting_date.strftime('%d/%m/%y') %></p>
-      <% end %>
+  <h3>:: next reading</h3>
+  <% if next_reading.blank? %>
+    <p>the next reading group is currently scheduled for 2022</p>
+  <% else %>
+    <% next_reading.each do |reading| %>
+      <div class="next_reading">
+        <p>"<%= reading.title %>" by <%= reading.author %>, on <%= reading.meeting_date.strftime('%d/%m/%y') %></p>
     <% end %>
-  </div>
-  <br>
-  <div class="past_reading">
-    <h3>Past Reading</h3>
-    <% if past_reading.blank? %>
-      <h3>Looks like we haven't read anything yet</h3>
-    <% else %>
-      <% past_reading.each do |reading| %>
-          <div>
-            <p>"<%= reading.title %>" by <%= reading.author %>, on <%= reading.meeting_date.strftime('%d/%m/%y') %></p>
-            <a href="<%= reading.url %>">link</a>
-          </div>
-        <% end %>
-      <% end %>
-    </div>
-  </div>
+  <% end %>
+</div>
+<br>
+<div class="past_reading">
+  <h3>:: past readings</h3>
+  <% if past_reading.blank? %>
+    <p>Looks like we haven't read anything yet</p>
+  <% else %>
+    <% past_reading.each do |reading| %>
+      <div>
+        <p>"<%= reading.title %>" by <%= reading.author %>, on <%= reading.meeting_date.strftime('%d/%m/%y') %></p>
+        <a href="<%= reading.url %>">link</a>
+      </div>
+    <% end %>
+  <% end %>
+</div>

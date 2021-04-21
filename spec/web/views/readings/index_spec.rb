@@ -25,11 +25,11 @@ RSpec.describe Web::Views::Readings::Index, type: :view do
     end
 
     it 'has a title' do
-      expect(rendered).to include('Next_Reading')
+      expect(rendered).to include('next reading')
     end
 
     it 'shows future readings placeholder' do
-      expect(rendered).to include('Nothing scheduled')
+      expect(rendered).to include('the next reading group')
     end
   end
 

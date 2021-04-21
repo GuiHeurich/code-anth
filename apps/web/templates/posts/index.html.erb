@@ -1,0 +1,16 @@
+<div>
+  <h2>:: writings</h2>
+
+  <% if posts.any? %>
+    <p>
+      as part of Code::Anth, we've been posting about our research with the ruby community <br>
+    </p>
+    <% posts.each do |post| %>
+    <div id="posts">
+      <a class="link" href="/posts/<%= post.id %>"><h3><%= post.title %></h3></a>
+    </div>
+    <% end %>
+  <% else %>
+    <p class="placeholder">Nothing to show yet.</p>
+  <% end %>
+</div>

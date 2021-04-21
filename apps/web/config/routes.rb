@@ -3,6 +3,8 @@
 #
 # Example:
 # get '/hello', to: ->(env) { [200, {}, ['Hello from Hanami!']] }
-get '/', to: 'home#index'
-post '/interlocutors', to: 'interlocutors#create', as: :create_interlocutor
-get '/readings', to: 'readings#index', as: :readings
+root to: 'home#index'
+resources :readings, only: [:index]
+resources :posts, only: [:index, :show]
+post '/interlocutors', to: 'interlocutors#create', as: 'create_interlocutor'
+get '/posts/:id', to: 'posts#show'
