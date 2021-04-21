@@ -18,7 +18,7 @@
     <% past_reading.each do |reading| %>
       <div>
         <p>"<%= reading.title %>" by <%= reading.author %>, on <%= reading.meeting_date.strftime('%d/%m/%y') %></p>
-        <a href="<%= reading.url %>">link</a>
+        <a class="link" href="<%= reading.url %>">link</a>
       </div>
     <% end %>
   <% end %>
