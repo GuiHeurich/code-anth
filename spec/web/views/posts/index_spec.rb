@@ -14,7 +14,7 @@ RSpec.describe Web::Views::Posts::Index do
     let(:exposures)   { Hash[posts: [post_one, post_two]]}
 
     it 'lists them all' do
-      expect(rendered.scan(/class="post"/).length).to eq(2)
+      expect(rendered.scan(/id="posts"/).length).to eq(2)
       expect(rendered).to include("a")
       expect(rendered).to include("d")
     end

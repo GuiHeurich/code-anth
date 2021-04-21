@@ -6,16 +6,15 @@ RSpec.describe 'Show posts' do
     before do
       repository.clear
 
-      repository.create(title: "a", author: "b", content: "c")
-      repository.create(title: "d", author: "e", content: "f")
+      repository.create(title: "world", author: "b", content: "c")
+      repository.create(title: "hello", author: "e", content: "f")
     end
 
     it 'shows the title of each post' do
       visit '/posts'
 
-      within '#posts' do
-        expect(page).to have_selector('.post', count: 2)
-      end
+      expect(page.html).to include("world")
+      expect(page.html).to include("hello")
     end
   end
 end
