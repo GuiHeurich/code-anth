@@ -19,14 +19,17 @@
   flex: 2 0 auto;
   padding-left: 20px;
   line-height: 1.5;
+  text-align: center;
 }
 
 .col2 {
-  flex: 5 1 auto;
+  flex: 5 1 50px;
 }
 
 .col3 {
-  flex: 1 0 auto;
+  flex: 2 0 auto;
+  padding-right: 20px;
+  text-align: center;
 }
 
 .link {
