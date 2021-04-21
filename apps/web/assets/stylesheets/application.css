@@ -7,27 +7,50 @@
   color: white;
   font: 1.3rem Inconsolata, monospace;
   text-shadow: 0 0 5px #C8C8C8;
+  font-size: 90%;
 }
 
 .wrapper {
   display: flex;
+  flex-direction: row;
 }
 
-.post {
-  color: white;
+.col1 {
+  flex: 2 0 auto;
+  padding-left: 20px;
+  line-height: 1.5;
+}
+
+.col2 {
+  flex: 5 1 auto;
+}
+
+.col3 {
+  flex: 1 0 auto;
+}
+
+.link {
   text-decoration: none;
+  color: #B8007A;
+  text-shadow: 0 0 1px #C8C8C8;
 }
 
-.post:hover {
-  color: white;
+.header {
+  text-align: center;
+  text-shadow: 0 0 1px #C8C8C8;
+  line-height: 0.8;
 }
 
-.post-title{
-  text-align: left;
-  padding-left: 40px;
+.header-title {
+  color: #7D99D1;
 }
 
-.paragraph {
+.header-second-line {
+  color: #B8007A;
+  text-size: 40%;
+}
+
+.main-section {
   padding-left: 40px;
   padding-right: 40px;
 }

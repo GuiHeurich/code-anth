@@ -6,12 +6,30 @@
     <%= stylesheet 'application' %>
   </head>
   <body class="body">
+    <div class="header">
+      <h1 class="header-title">Code::Anth</h1>
+      <p class="header-second-line"> anthropology with programmers in it </p>
+    </div>
     <div class="wrapper">
-      <div class="col1">Left/Menu</div>
-      <div class="col2">
-      <%= yield %>
+      <div class="col1">
+        <br>
+        <a class="link" href="/">CodeAnth</a>
+        <br>
+        <a class="link" href="/posts">Writings</a>
+        <br>
+        <a class="link" href="/readings">Readings</a>
+        <br>
+        <a class="link" href="mailto:contact@code-anth.xyz">Email us</a>
       </div>
-      <div class="col3">Right/Silly</div>
+      <div class="col2">
+        <div class="main-section">
+          <%= yield %>
+        </div>
+      </div>
+      <div class="col3">
+        <br>
+        <a class="link" href="http://poignant.guide/book/chapter-2.html">Yes, but why?</a>
+      </div>
     </div>
   </body>
 </html>
