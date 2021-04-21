@@ -7,7 +7,7 @@
   color: white;
   font: 1.3rem Inconsolata, monospace;
   text-shadow: 0 0 5px #C8C8C8;
-  font-size: 90%;
+  font-size: 110%;
 }
 
 .wrapper {
@@ -56,4 +56,9 @@
 .main-section {
   padding-left: 40px;
   padding-right: 40px;
+}
+
+.post-content {
+  font-size: 110%;
+  line-height: 1.5;
 }
