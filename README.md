@@ -11,9 +11,9 @@ A list of TODO's is provided below. Please clone and contribute.
 
 # TODO
 
-[] Collaborative reading list, where people can upload content
-[] Design a new favicon
-[X] ~~Implement a contact form for rubyists~~
+1. [] Collaborative reading list, where people can upload content
+2. [] Design a new favicon
+3. [X] ~~Implement a contact form for rubyists~~
 
 # Learning and research group
 
